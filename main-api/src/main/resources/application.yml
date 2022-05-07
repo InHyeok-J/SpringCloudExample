@@ -4,16 +4,16 @@ server:
 spring:
   application:
     name: main-api-service
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:13306/demoDB?serverTimezone=UTC&characterEncoding=UTF-8
-    username: root
-    password: rootuser
-  jpa:
-    hibernate:
-      ddl-auto: create-drop
-    generate-ddl: true
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:13306/demoDB?serverTimezone=UTC&characterEncoding=UTF-8
+#    username: root
+#    password: rootuser
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    generate-ddl: true
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
 
 eureka:
   instance:
