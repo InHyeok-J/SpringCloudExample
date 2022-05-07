@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  demo-mysql:
+    image: mysql:8
+    container_name: demo-mysql
+    ports:
+      - 13306:3306
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    environment:
+      - TZ=Asia/Seoul
+      - MYSQL_ROOT_USER=root
+      - MYSQL_ROOT_PASSWORD=rootuser
+      - MYSQL_DATABASE=demoDB
+    volumes:
+      - ./db/mysql:/var/lib/mysql
